@@ -137,7 +137,7 @@ git clone https://github.com/BarryMode/mac-prime.git ~/ && ~//prime.sh
   <thead>
     <tr>
       <th valign="middle" align="center">
-        <a href="https://barrymode.com"><img alt="BarryMode" src="https://avatars3.githubusercontent.com/u/5648875?v=2&s=200" width="100" height="100"></a>
+        <a href="https://barrymode.com"><img alt="BarryMode" src="https://avatars.githubusercontent.com/u/91902180?v=4&s=200" width="100" height="100"></a>
       </th>
     </tr>
   </thead>
