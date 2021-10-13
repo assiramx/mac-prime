@@ -7,8 +7,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "imxieyi/waifu2x"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Core application library for C
@@ -17,6 +15,8 @@ brew "glib"
 brew "gdk-pixbuf"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
+# OpenType text shaping engine
+brew "harfbuzz"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # Library to render SVG files using Cairo
@@ -45,12 +45,18 @@ brew "cmake"
 brew "cmatrix"
 # Dependency Manager for PHP
 brew "composer"
+# C library implementing the SSH2 protocol
+brew "libssh2"
+# Open source suite of directory software
+brew "openldap"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Terminal visual disk space navigator
 brew "diskonaut"
 # Pack, ship and run any application as a lightweight container
 brew "docker", link: false
 # Isolated development environments using Docker
-brew "docker-compose", link: false
+brew "docker-compose"
 # More intuitive version of du in rust
 brew "dust"
 # Modern replacement for 'ls'
@@ -63,6 +69,8 @@ brew "fd"
 brew "libtool"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
 # Secure Reliable Transport
 brew "srt"
 # Play, record, convert, and stream audio and video
@@ -71,6 +79,8 @@ brew "ffmpeg"
 brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Platform built on V8 to build network applications
+brew "node", link: false
 # Gatsby command-line interface
 brew "gatsby-cli"
 # GNU compiler collection
@@ -83,6 +93,8 @@ brew "gh"
 brew "ghostscript"
 # Distributed revision control system
 brew "git"
+# GSettings schemas for desktop components
+brew "gsettings-desktop-schemas"
 # Network related modules for glib
 brew "glib-networking"
 # GNU implementation of the famous stream editor
@@ -113,8 +125,12 @@ brew "jdupes"
 brew "jq"
 # Network authentication protocol
 brew "krb5"
+# DNS library written in C
+brew "ldns"
 # Provides library functionality for FIDO U2F & FIDO 2.0, including USB
 brew "libfido2"
+# Postgres C API library
+brew "libpq"
 # Mac App Store command-line interface
 brew "mas"
 # Command-line client for Mega.co.nz
@@ -145,10 +161,14 @@ brew "pup"
 brew "rclone"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Install various Ruby versions and implementations
+brew "ruby-build"
 # Safe, concurrent, practical language
 brew "rust"
 # Rust toolchain installer
 brew "rustup-init"
+# Substitute for classic 'make' tool with autoconf/automake functionality
+brew "scons"
 # Intuitive find & replace CLI
 brew "sd"
 # Tool to create intelligent and beautiful documentation
@@ -195,7 +215,6 @@ cask "cyberduck"
 cask "dhs"
 # Voice and text chat software
 cask "discord"
-cask "dissenter-browser"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Emulator to play GameCube and Wii games
@@ -230,6 +249,8 @@ cask "imageoptim"
 cask "ios-app-signer"
 cask "java"
 cask "jdownloader"
+# File archiver
+cask "keka"
 # End-to-end encryption software
 cask "keybase"
 # Tool to show what is persistently installed on the computer
@@ -241,6 +262,7 @@ cask "lulu"
 # Warns about malware, adware and spyware
 cask "malwarebytes"
 cask "massreplaceit"
+# Display technical and tag data for video and audio files
 cask "mediainfo"
 # Syncs files between computers and MEGA Cloud drives
 cask "megasync"
@@ -248,6 +270,8 @@ cask "megasync"
 cask "obs"
 # Retro video game emulation
 cask "openemu"
+# Play PC games and connect with your friends
+cask "origin"
 cask "paragon-ntfs"
 # Tool to create native applications from command-line scripts
 cask "platypus"
@@ -283,6 +307,8 @@ cask "xmind-zen"
 cask "xquartz"
 # Comic reader
 cask "yacreader"
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "Bitwarden", id: 1352778147
 mas "Crontab Creator", id: 1438725196
 mas "Developer", id: 640199958
