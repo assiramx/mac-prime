@@ -28,7 +28,7 @@ function update() {
       gd="/Volumes/GoogleDrive/My Drive"
       if [ -d "$gd" ]; then
         cd "$gd"
-        for src in Documents Documents/Repos/gsc Documents/Computer/Applications Documents/Notes/Legal Documents/Projects Documents/Projects/YouTube Games Music Pictures; do
+        for src in Documents Documents/Repos/gsc Documents/Notes/Legal Documents/Projects Documents/Projects/YouTube Games Music Pictures; do
           cd "$gd/$src"
           for dir in ./; do
             run=(
