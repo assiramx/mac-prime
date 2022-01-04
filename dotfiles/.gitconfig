@@ -95,6 +95,7 @@
 [merge]
   # Include summaries of merged commits in newly created merge commit messages
   log = true
+	autostash = true
 
 [protocol "keybase"]
   # Allow the kbfs filesystem
