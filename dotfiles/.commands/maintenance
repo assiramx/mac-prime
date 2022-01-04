@@ -7,7 +7,7 @@ function fix() {
     "audio") sudo pkill coreaudiod ;;
 
     # `fix app /Applications/name.app` | When an app tells you "This app is damaged and can't be opened. You should move it to the trash."
-    "app") xattr -rc ;;
+    "app") xattr -rc $2 ;;
 
     # `fix launchservices` - Remove LaunchServices duplicates in the "Open With" menu
     "launchservices") /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder ;;
